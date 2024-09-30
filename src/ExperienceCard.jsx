@@ -1,10 +1,11 @@
 import { CalendarMonth } from "@mui/icons-material";
 import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
+import buerentals from "./assets/img/buerentals.jpeg";
 
 export const ExperienceCard = () => {
   return (
     <Box className="card">
-      <img src="/buerentals.jpeg" alt="Buerentals logo" width={"50px"} />
+      <img src={buerentals} alt="Buerentals logo" width={"50px"} />
       <Typography variant="h6" align="center">
         <strong>Collections management</strong>
       </Typography>

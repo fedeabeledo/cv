@@ -6,6 +6,9 @@ import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import petshopImage from "./assets/img/petshop.jpg";
+import universityRegistrationSystemImage from "./assets/img/university-registration-system.jpg";
+import trilaterationImage from "./assets/img/trilateration.jpg";
 
 export const Projects = () => {
   const projects = [
@@ -14,7 +17,7 @@ export const Projects = () => {
       description:
         "Implementation of a secure and efficient system to manage products, users and orders, as well as a RESTful API for communication with the frontend",
       skills: ["Java", "Spring Boot", "JWT", "MySQL"],
-      image: "/petshop.jpg",
+      image: petshopImage,
       imageText: "Petshop",
       link: "https://github.com/fedeabeledo/backend-api-grupo-seis",
     },
@@ -23,7 +26,7 @@ export const Projects = () => {
       description:
         "An integrated platform for educational institutions that streamlines course registration, enrollment, tracking, and payments, with interconnected modules ensuring efficient workflows and unit testing for reliability",
       skills: ["Java", "Spring Boot", "Unit testing"],
-      image: "/university-registration-system.jpg",
+      image: universityRegistrationSystemImage,
       imageText: "University Registration System",
       link: "https://github.com/valentincampestri/Registration-system-for-universities",
     },
@@ -32,7 +35,7 @@ export const Projects = () => {
       description:
         "Developing a trilateration solution that calculates the intersection of three circles based on their coordinates and radius, using mathematical algorithms to determine the precise location.",
       skills: ["Java", "Spring Boot"],
-      image: "/trilateration.jpg",
+      image: trilaterationImage,
       imageText: "Trilateration",
       link: "https://github.com/rrrrho/tpo-poo",
     },

@@ -15,6 +15,8 @@ import { transform } from "framer-motion";
 import { AboutMe } from "./AboutMe";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
+import avatar from "./assets/img/avatar.png";
+import cv from "./assets/Federico_Abeledo_Resume.pdf";
 
 export const Presentation = () => {
   const [selected, setSelected] = useState("about");
@@ -62,7 +64,7 @@ export const Presentation = () => {
       >
         <Avatar
           alt="Federico Abeledo avatar"
-          src="/avatar.png"
+          src={avatar}
           sx={{ width: 120, height: 120 }}
         />
         <h2 className="profile-name">Federico Abeledo</h2>
@@ -103,10 +105,7 @@ export const Presentation = () => {
           <EmailIcon />
         </a>
       </Box>
-      <a
-        href="/Federico_Abeledo_Resume.pdf"
-        download="Federico_Abeledo_Resume.pdf"
-      >
+      <a href={cv} download="Federico_Abeledo_Resume.pdf">
         <Button variant="outlined" sx={buttonStyle} endIcon={<DownloadIcon />}>
           Download Resume
         </Button>
