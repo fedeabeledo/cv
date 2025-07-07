@@ -5,6 +5,7 @@ import { Skills } from "@/components/Skills/Skills";
 import { Projects } from "@/components/Projects/Projects";
 import { PresentationCard } from "@/components/PresentationCard/PresentationCard";
 import Hack4uLogo from "@/assets/hack4u_logo.jpg";
+import { BlurIn } from "@/components/animations/BlurIn";
 
 const certificates = [
     {
@@ -80,10 +81,13 @@ export default function Home() {
                             </li>
                         </ol>
                     </Card>
-                    <div className="flex flex-col items-start justify-center gap-2">
-                        <h2 className="text-4xl font-semibold text-primary">
+                    <div className="flex flex-col items-center lg:items-start justify-center gap-2 w-full">
+                        <BlurIn
+                            variant="h1"
+                            className="text-4xl font-bold m-4 ml-0 text-primary"
+                        >
                             Certifications
-                        </h2>
+                        </BlurIn>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
                             {certificates.map((cert, index) => (
                                 <Card
