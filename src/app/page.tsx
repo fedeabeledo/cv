@@ -86,7 +86,7 @@ export default function Home() {
                             variant="h1"
                             className="text-4xl font-bold m-4 ml-0 text-primary"
                         >
-                            Certifications
+                            Certificates
                         </BlurIn>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
                             {certificates.map((cert, index) => (
