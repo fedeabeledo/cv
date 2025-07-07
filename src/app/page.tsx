@@ -6,6 +6,7 @@ import { Projects } from "@/components/Projects/Projects";
 import { PresentationCard } from "@/components/PresentationCard/PresentationCard";
 import Hack4uLogo from "@/assets/hack4u_logo.jpg";
 import { BlurIn } from "@/components/animations/BlurIn";
+import ToggleTheme from "@/components/ToggleTheme/ToggleTheme";
 
 const certificates = [
     {
@@ -30,6 +31,7 @@ export default function Home() {
     return (
         <>
             <main className="flex flex-col lg:flex-row items-center lg:items-start justify-center p-4 lg:p-8 gap-6 lg:gap-8">
+                <ToggleTheme />
                 <PresentationCard />
                 <div className="flex flex-col items-start justify-center gap-4">
                     <AboutMe />

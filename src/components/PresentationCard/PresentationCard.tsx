@@ -8,7 +8,6 @@ import {
     RiWhatsappFill,
     RiMailFill,
 } from "react-icons/ri";
-import ToggleTheme from "../ToggleTheme/ToggleTheme";
 
 export const PresentationCard = () => {
     const handleDownloadCV = () => {
@@ -28,19 +27,19 @@ export const PresentationCard = () => {
             color: "#333",
         },
         {
-            href: "https://linkedin.com/in/federico-abeledo", // Cambia por tu LinkedIn real
+            href: "https://linkedin.com/in/federico-abeledo",
             icon: RiLinkedinFill,
             label: "LinkedIn",
             color: "#0077b5",
         },
         {
-            href: "https://wa.me/1234567890", // Cambia por tu número de WhatsApp
+            href: "https://wa.me/5491153230016",
             icon: RiWhatsappFill,
             label: "WhatsApp",
             color: "#25d366",
         },
         {
-            href: "mailto:tu-email@ejemplo.com", // Cambia por tu email
+            href: "mailto:fedeabeledo01@gmail.com",
             icon: RiMailFill,
             label: "Email",
             color: "#dd4b39",
@@ -49,7 +48,6 @@ export const PresentationCard = () => {
 
     return (
         <div className="p-4 lg:p-6 lg:sticky lg:top-0 lg:h-fit">
-            <ToggleTheme />
             <div
                 className="flex flex-col items-center justify-center gap-4 lg:gap-6
                          border-2 border-secondary dark:border-primary rounded-md p-4 lg:p-6 bg-[var(--card_bg)]
