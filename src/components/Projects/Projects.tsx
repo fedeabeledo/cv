@@ -4,6 +4,7 @@ import TRILATERATION from "@/assets/projects/trilateration.jpg";
 import PATITAS_PELUDAS from "@/assets/projects/patitas_peludas.png";
 import REGISTRATION_SYSTEM from "@/assets/projects/registration_system.jpg";
 import PORTFOLIO from "@/assets/projects/portfolio.png";
+import MIPTECH from "@/assets/projects/miptech.png";
 
 const projects = [
     {
@@ -53,6 +54,35 @@ const projects = [
         ],
     },
     {
+        image: MIPTECH,
+        title: "Miptech",
+        description:
+            "MipTech is a responsive web app for agricultural management, offering real-time notifications, a chatbot, and role-based access control to help producers monitor fields and campaigns efficiently.",
+        skills: [
+            "TypeScript",
+            "JavaScript",
+            "React",
+            "Chakra UI",
+            "JWT",
+            "Socket.IO",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+        ],
+        startDate: "March 2025",
+        endDate: "July 2025",
+        repositories: [
+            {
+                url: "https://github.com/Augusto-FG/MIPTech-backend",
+                name: "Backend",
+            },
+            {
+                url: "https://github.com/rrrrho/miptech-frontend",
+                name: "Frontend",
+            },
+        ],
+    },
+    {
         image: PORTFOLIO,
         title: "CV",
         description:
@@ -60,7 +90,7 @@ const projects = [
         skills: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
         startDate: "July 2025",
         repositories: [
-            { url: "https://github.com/fedeabeledo/portfolio", name: "Source" },
+            { url: "https://github.com/fedeabeledo/cv", name: "Source" },
         ],
     },
 ];
