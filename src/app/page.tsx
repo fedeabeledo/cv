@@ -5,6 +5,7 @@ import { Skills } from "@/components/Skills/Skills";
 import { Projects } from "@/components/Projects/Projects";
 import { PresentationCard } from "@/components/PresentationCard/PresentationCard";
 import Hack4uLogo from "@/assets/hack4u_logo.jpg";
+import CiscoLogo from "@/assets/cisco_logo.jpg";
 import { BlurIn } from "@/components/animations/BlurIn";
 import ToggleTheme from "@/components/ToggleTheme/ToggleTheme";
 
@@ -16,6 +17,7 @@ const certificates = [
         title: "Linux Introduction",
         provider: "Hack4u",
         date: "October 2024",
+        inProgress: false,
     },
     {
         logo: Hack4uLogo,
@@ -24,6 +26,16 @@ const certificates = [
         title: "Linux Customization",
         provider: "Hack4u",
         date: "August 2024",
+        inProgress: false,
+    },
+    {
+        logo: CiscoLogo,
+        logoAlt: "Cisco Logo",
+        logoClassname: "bg-white object-contain rounded-xl w-12 h-12",
+        title: "CCNA: Introduction to Networks",
+        provider: "Cisco",
+        date: "August 2025 - December 2025",
+        inProgress: true,
     },
 ];
 
@@ -90,7 +102,7 @@ export default function Home() {
                         >
                             Certificates
                         </BlurIn>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
                             {certificates.map((cert, index) => (
                                 <Card
                                     key={index}
@@ -100,6 +112,11 @@ export default function Home() {
                                     subtitle={cert.title}
                                     text={cert.provider}
                                     startDate={cert.date}
+                                    className="flex flex-col items-center lg:items-start justify-center w-full max-w-xs"
+                                    badge={cert.inProgress ? "In Progress" : ""}
+                                    badgeColor={
+                                        cert.inProgress ? "bg-yellow-600" : ""
+                                    }
                                 />
                             ))}
                         </div>

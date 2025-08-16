@@ -12,7 +12,7 @@ import {
 export const PresentationCard = () => {
     const handleDownloadCV = () => {
         const link = document.createElement("a");
-        link.href = "/Federico-Abeledo-Resume.pdf";
+        link.href = "/cv/Federico-Abeledo-Resume.pdf";
         link.download = "Federico Abeledo Resume.pdf";
         document.body.appendChild(link);
         link.click();

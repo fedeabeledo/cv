@@ -15,6 +15,9 @@ interface CardProps {
     startDate: string;
     endDate?: string;
     children?: React.ReactNode;
+    className?: string;
+    badge?: string;
+    badgeColor?: string;
 }
 
 export const Card = ({
@@ -28,10 +31,13 @@ export const Card = ({
     text,
     startDate,
     endDate,
+    className = "flex flex-col items-center lg:items-start justify-center",
     children,
+    badge,
+    badgeColor = "bg-green-500",
 }: CardProps) => {
     return (
-        <div className="flex flex-col items-center lg:items-start justify-center">
+        <div className={className}>
             {title && (
                 <BlurIn
                     variant="h1"
@@ -41,10 +47,17 @@ export const Card = ({
                 </BlurIn>
             )}
             <BlurIn
-                className="flex flex-col items-start justify-center border-2 border-[var(--primary)] rounded-md p-5 bg-[var(--card_bg)]"
+                className="relative flex flex-col items-start justify-center border-2 border-[var(--primary)] rounded-md p-5 bg-[var(--card_bg)] w-full"
                 delay={0.3}
             >
-                <div className="flex flex-col justify-center min-w-3xs gap-1 mb-2">
+                {badge && (
+                    <div
+                        className={`absolute top-2 right-2 px-2 py-1 rounded-full text-xs font-semibold text-white ${badgeColor}`}
+                    >
+                        {badge}
+                    </div>
+                )}
+                <div className="flex flex-col justify-center w-full gap-1 mb-2">
                     {logo && (
                         <Image
                             width={logoWidth}
