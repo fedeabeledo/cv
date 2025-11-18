@@ -35,7 +35,7 @@ const certificates = [
         title: "CCNA: Introduction to Networks",
         provider: "Cisco",
         date: "August 2025 - December 2025",
-        inProgress: true,
+        inProgress: false,
     },
 ];
 
