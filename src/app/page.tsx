@@ -6,6 +6,7 @@ import { Projects } from "@/components/Projects/Projects";
 import { PresentationCard } from "@/components/PresentationCard/PresentationCard";
 import Hack4uLogo from "@/assets/hack4u_logo.jpg";
 import CiscoLogo from "@/assets/cisco_logo.jpg";
+import KPMGLogo from "@/assets/kpmg_logo.jpg";
 import { BlurIn } from "@/components/animations/BlurIn";
 import ToggleTheme from "@/components/ToggleTheme/ToggleTheme";
 
@@ -35,6 +36,15 @@ const certificates = [
         title: "CCNA: Introduction to Networks",
         provider: "Cisco",
         date: "August 2025 - December 2025",
+        inProgress: false,
+    },
+    {
+        logo: KPMGLogo,
+        logoAlt: "KPMG Logo",
+        logoClassname: "bg-white object-contain rounded-xl w-12 h-12",
+        title: "Cyberboot",
+        provider: "KPMG",
+        date: "November 2025 - December 2025",
         inProgress: false,
     },
 ];
