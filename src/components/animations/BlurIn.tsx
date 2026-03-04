@@ -27,14 +27,24 @@ export const BlurIn: React.FC<BlurInProps> = ({
 }) => {
     const ref = React.useRef(null);
     const isInView = useInView(ref, { once: true });
+    const [forceVisible, setForceVisible] = React.useState(false);
+
+    React.useEffect(() => {
+        const timeoutId = window.setTimeout(() => {
+            setForceVisible(true);
+        }, 1200);
+
+        return () => window.clearTimeout(timeoutId);
+    }, []);
 
     const MotionComponent = motion[variant];
+    const shouldShow = isInView || forceVisible;
 
     return (
         <MotionComponent
             ref={ref}
             initial={{ filter: "blur(20px)", opacity: 0 }}
-            animate={isInView ? { filter: "blur(0px)", opacity: 1 } : {}}
+            animate={shouldShow ? { filter: "blur(0px)", opacity: 1 } : {}}
             transition={{ duration, delay }}
             className={className}
             style={style}

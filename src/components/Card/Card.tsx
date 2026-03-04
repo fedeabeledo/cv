@@ -31,7 +31,7 @@ export const Card = ({
     text,
     startDate,
     endDate,
-    className = "flex flex-col items-center lg:items-start justify-center",
+    className = "flex flex-col items-center lg:items-start justify-center w-full max-w-2xl",
     children,
     badge,
     badgeColor = "bg-green-500",
