@@ -69,18 +69,28 @@ export default function Home() {
                     >
                         <div className="flex mt-1">
                             <span className="text-md font-medium">
-                                29 of 52 subjects completed
+                                33 of 52 subjects completed
                             </span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-3.5 dark:bg-[var(--card_bg)]">
                             <div
                                 className="bg-[var(--primary)] h-3.5 rounded-full"
-                                style={{ width: "56%" }}
+                                style={{ width: "63%" }}
                             ></div>
                         </div>
                     </Card>
                     <Card
                         title="Experience"
+                        subtitle="Cybersecurity Jr. Consultant"
+                        text="KPMG - Full Time"
+                        startDate="January 2026"
+                        endDate="present"
+                    >
+                        <ol className="list-disc list-inside text-md font-medium">
+                            <li>Users control</li>
+                        </ol>
+                    </Card>
+                    <Card
                         subtitle="Collections Management"
                         text="Buerentals - Part Time"
                         startDate="July 2022"

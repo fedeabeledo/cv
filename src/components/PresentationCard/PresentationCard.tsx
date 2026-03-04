@@ -76,7 +76,7 @@ export const PresentationCard = () => {
                         className="text-2xl font-semibold text-[var(--secondary)] mb-3"
                         delay={0.4}
                     >
-                        Software Developer
+                        Cybersecurity Jr. Consultant
                     </BlurIn>
                 </div>
 
