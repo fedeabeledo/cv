@@ -1,0 +1,284 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "certifications": "Certifications",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "toggles": {
+    "langAria": "Cambiar idioma a español",
+    "themeToDark": "Dark",
+    "themeToLight": "Light",
+    "themeToDarkAria": "Switch to dark theme",
+    "themeToLightAria": "Switch to light theme"
+  },
+  "hero": {
+    "role": "Cybersecurity Ssr. Consultant",
+    "student": "Computer Science Engineering student",
+    "cv": "Download CV",
+    "basedLabel": "Based in",
+    "basedValue": "Buenos Aires, Argentina",
+    "nowLabel": "Currently",
+    "nowValue": "KPMG Argentina",
+    "photoAlt": "Portrait of Federico Abeledo",
+    "figCaption": "Fig. 1 — Federico Abeledo, 2026.",
+    "langsLabel": "Languages",
+    "langsValue": "Spanish (native) · English (full professional)"
+  },
+  "about": {
+    "title": "About",
+    "lead": "I work in cybersecurity on the governance side: access controls, audits, service accounts and the evidence that proves things are actually under control.",
+    "body": "I automate whatever I end up doing twice, mostly with Python and PowerShell. I pick up new tools and domains quickly and enjoy being thrown into unfamiliar territory. My path so far has taken me from software development to networking to GRC, and I’m always looking for the next thing to learn. I’m finishing my Computer Science Engineering degree at UADE and aiming to keep growing in security, broadly and deeply."
+  },
+  "experience": {
+    "title": "Experience",
+    "kpmg": {
+      "role": "Cybersecurity Ssr. Consultant",
+      "org": "KPMG",
+      "dates": "Jan 2026 — Present",
+      "promo": "Promoted from Jr. to Ssr. · Sep 2026",
+      "bullets": [
+        "Operate user access governance controls under SOX and CIS frameworks: periodic access reviews, joiner/mover/leaver validation and evidence consolidation.",
+        "Drive service account governance: cross-reference multiple data sources to identify owners of inactive service accounts and coordinate their deactivation.",
+        "Lead Active Directory cleanup initiatives, identifying stale and orphaned accounts.",
+        "Extract and prepare audit evidence from multiple systems, including SAP, and respond to internal and external audit requests.",
+        "Automate recurring reporting and validation tasks with Python and PowerShell.",
+        "Support vulnerability management activities using Tenable, prioritizing findings with CVSS and CISA KEV.",
+        "Coordinate with employees and internal teams on access requests and follow-ups.",
+        "Founded and run an internal AZ-900 study group for colleagues, with weekly module-by-module sessions."
+      ]
+    },
+    "buerentals": {
+      "role": "Collections Management",
+      "org": "Buerentals",
+      "dates": "Jul 2022 — Jun 2023 · Part-time",
+      "bullets": [
+        "Managed customer communication and reservation data for short-term rentals."
+      ]
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "primary": {
+      "name": "Security & GRC",
+      "items": [
+        "Access governance",
+        "Service account management",
+        "SOX controls",
+        "Audit evidence",
+        "Active Directory",
+        "Vulnerability management — Tenable, CVSS, CISA KEV",
+        "API security basics"
+      ]
+    },
+    "groups": [
+      {
+        "name": "Automation",
+        "items": [
+          "Python",
+          "PowerShell"
+        ]
+      },
+      {
+        "name": "Infra",
+        "items": [
+          "Linux",
+          "Networking (CCNA)"
+        ]
+      },
+      {
+        "name": "Development",
+        "items": [
+          "Java / Spring Boot",
+          "Flask",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "Node.js / Express"
+        ]
+      },
+      {
+        "name": "Databases",
+        "items": [
+          "MySQL",
+          "PostgreSQL",
+          "SQL Server",
+          "MongoDB",
+          "Redis"
+        ]
+      },
+      {
+        "name": "Practices",
+        "items": [
+          "Git",
+          "REST APIs",
+          "Agile",
+          "Unit testing",
+          "SOLID / GRASP"
+        ]
+      }
+    ],
+    "languages": {
+      "name": "Languages",
+      "items": [
+        {
+          "lang": "Spanish",
+          "level": "Native"
+        },
+        {
+          "lang": "English",
+          "level": "Full professional proficiency"
+        }
+      ]
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "inProgress": "In progress",
+    "items": [
+      {
+        "code": "SC-900",
+        "name": "Microsoft Security, Compliance, and Identity Fundamentals",
+        "issuer": "Microsoft",
+        "year": null,
+        "inProgress": true
+      },
+      {
+        "code": "AZ-900",
+        "name": "Microsoft Azure Fundamentals",
+        "issuer": "Microsoft",
+        "year": "2026",
+        "inProgress": false
+      },
+      {
+        "code": "CCNA",
+        "name": "Switching, Routing, and Wireless Essentials",
+        "issuer": "Cisco",
+        "year": "2026",
+        "inProgress": false
+      },
+      {
+        "code": "CCNA",
+        "name": "Introduction to Networks",
+        "issuer": "Cisco",
+        "year": "2025",
+        "inProgress": false
+      },
+      {
+        "code": "KPMG",
+        "name": "Cyberboot",
+        "issuer": "KPMG",
+        "year": "2025",
+        "inProgress": false
+      },
+      {
+        "code": "Hack4U",
+        "name": "Linux Introduction & Linux Customization",
+        "issuer": "Hack4U",
+        "year": "2024",
+        "inProgress": false
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Engineering Degree in Computer Science",
+    "school": "UADE",
+    "dates": "Mar 2022 — Present",
+    "completed": 37,
+    "total": 52,
+    "subjects": "subjects completed",
+    "expected": "Expected graduation: Dec 2027",
+    "progressAria": "37 of 52 subjects completed"
+  },
+  "projects": {
+    "title": "Projects",
+    "source": "Source",
+    "items": [
+      {
+        "title": "MipTech",
+        "desc": "Agricultural management web app with role-based access control, JWT authentication, real-time notifications (Socket.IO) and an AI chatbot.",
+        "tags": [
+          "TypeScript",
+          "React",
+          "Chakra UI",
+          "Node.js",
+          "Express.js",
+          "MongoDB"
+        ],
+        "links": [
+          {
+            "labelKey": "backend",
+            "url": "https://github.com/Augusto-FG/MIPTech-backend"
+          },
+          {
+            "labelKey": "frontend",
+            "url": "https://github.com/rrrrho/miptech-frontend"
+          }
+        ]
+      },
+      {
+        "title": "Patitas Peludas",
+        "desc": "Full-stack e-commerce with a JWT-secured REST API and role-based authorization (admin, buyer, seller) across products and orders.",
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "React"
+        ],
+        "links": [
+          {
+            "labelKey": "backend",
+            "url": "https://github.com/fedeabeledo/backend-api-grupo-seis"
+          },
+          {
+            "labelKey": "frontend",
+            "url": "https://github.com/rrrrho/frontend-api-grupo-seis"
+          }
+        ]
+      },
+      {
+        "title": "Registration System for Universities",
+        "desc": "Modular platform for enrollment, tracking and payments, designed around SOLID/GRASP with unit-tested business logic.",
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "JUnit"
+        ],
+        "links": [
+          {
+            "labelKey": "source",
+            "url": "https://github.com/valentincampestri/Registration-system-for-universities"
+          }
+        ]
+      },
+      {
+        "title": "Trilateration",
+        "desc": "Spring Boot service that computes a location from three reference points.",
+        "tags": [
+          "Java",
+          "Spring Boot"
+        ],
+        "links": [
+          {
+            "labelKey": "source",
+            "url": "https://github.com/rrrrho/tpo-poo"
+          }
+        ]
+      }
+    ],
+    "backend": "Backend",
+    "frontend": "Frontend"
+  },
+  "contact": {
+    "title": "Contact",
+    "heading": "Let’s talk.",
+    "langsLabel": "Languages",
+    "langsValue": "Spanish (native) · English (full professional proficiency)",
+    "copyright": "© 2026 Federico Abeledo",
+    "colophon": "Static site · no trackers · strict CSP"
+  }
+}

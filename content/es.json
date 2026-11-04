@@ -1,0 +1,284 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "certifications": "Certificaciones",
+    "education": "Formación",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "toggles": {
+    "langAria": "Switch language to English",
+    "themeToDark": "Oscuro",
+    "themeToLight": "Claro",
+    "themeToDarkAria": "Cambiar a tema oscuro",
+    "themeToLightAria": "Cambiar a tema claro"
+  },
+  "hero": {
+    "role": "Consultor Ssr. en Ciberseguridad",
+    "student": "Estudiante de Ingeniería en Informática",
+    "cv": "Descargar CV",
+    "basedLabel": "Ubicación",
+    "basedValue": "Buenos Aires, Argentina",
+    "nowLabel": "Actualmente",
+    "nowValue": "KPMG Argentina",
+    "photoAlt": "Retrato de Federico Abeledo",
+    "figCaption": "Fig. 1 — Federico Abeledo, 2026.",
+    "langsLabel": "Idiomas",
+    "langsValue": "Español (nativo) · Inglés (profesional completo)"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "lead": "Trabajo en ciberseguridad del lado de la gobernanza: controles de acceso, auditorías, cuentas de servicio y la evidencia que demuestra que las cosas realmente están bajo control.",
+    "body": "Automatizo todo lo que termino haciendo dos veces, principalmente con Python y PowerShell. Aprendo nuevas herramientas y dominios con rapidez y disfruto que me pongan en terreno desconocido. Mi camino hasta ahora me llevó del desarrollo de software a las redes y de ahí a GRC, y siempre estoy buscando lo próximo para aprender. Estoy terminando la carrera de Ingeniería en Informática en UADE y apunto a seguir creciendo en seguridad, tanto en amplitud como en profundidad."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "kpmg": {
+      "role": "Consultor Ssr. en Ciberseguridad",
+      "org": "KPMG",
+      "dates": "Ene 2026 — Actualidad",
+      "promo": "Ascendido de Jr. a Ssr. · Sep 2026",
+      "bullets": [
+        "Opero controles de gobierno de accesos de usuarios bajo los marcos SOX y CIS: revisiones periódicas de accesos, validación de altas, bajas y cambios (joiner/mover/leaver) y consolidación de evidencia.",
+        "Impulso el gobierno de cuentas de servicio: cruzo múltiples fuentes de datos para identificar a los responsables de cuentas de servicio inactivas y coordino su desactivación.",
+        "Lidero iniciativas de depuración de Active Directory, identificando cuentas obsoletas y huérfanas.",
+        "Extraigo y preparo evidencia de auditoría de múltiples sistemas, incluido SAP, y respondo requerimientos de auditorías internas y externas.",
+        "Automatizo tareas recurrentes de reporte y validación con Python y PowerShell.",
+        "Doy soporte a la gestión de vulnerabilidades con Tenable, priorizando hallazgos según CVSS y CISA KEV.",
+        "Coordino con empleados y equipos internos solicitudes de acceso y su seguimiento.",
+        "Fundé y coordino un grupo de estudio interno de AZ-900 para colegas, con sesiones semanales módulo por módulo."
+      ]
+    },
+    "buerentals": {
+      "role": "Gestión de Cobranzas",
+      "org": "Buerentals",
+      "dates": "Jul 2022 — Jun 2023 · Medio tiempo",
+      "bullets": [
+        "Gestioné la comunicación con clientes y los datos de reservas de alquileres temporarios."
+      ]
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "primary": {
+      "name": "Seguridad y GRC",
+      "items": [
+        "Gobierno de accesos",
+        "Gestión de cuentas de servicio",
+        "Controles SOX",
+        "Evidencia de auditoría",
+        "Active Directory",
+        "Gestión de vulnerabilidades — Tenable, CVSS, CISA KEV",
+        "Fundamentos de seguridad en APIs"
+      ]
+    },
+    "groups": [
+      {
+        "name": "Automatización",
+        "items": [
+          "Python",
+          "PowerShell"
+        ]
+      },
+      {
+        "name": "Infraestructura",
+        "items": [
+          "Linux",
+          "Redes (CCNA)"
+        ]
+      },
+      {
+        "name": "Desarrollo",
+        "items": [
+          "Java / Spring Boot",
+          "Flask",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "Node.js / Express"
+        ]
+      },
+      {
+        "name": "Bases de datos",
+        "items": [
+          "MySQL",
+          "PostgreSQL",
+          "SQL Server",
+          "MongoDB",
+          "Redis"
+        ]
+      },
+      {
+        "name": "Prácticas",
+        "items": [
+          "Git",
+          "APIs REST",
+          "Agile",
+          "Testing unitario",
+          "SOLID / GRASP"
+        ]
+      }
+    ],
+    "languages": {
+      "name": "Idiomas",
+      "items": [
+        {
+          "lang": "Español",
+          "level": "Nativo"
+        },
+        {
+          "lang": "Inglés",
+          "level": "Competencia profesional completa"
+        }
+      ]
+    }
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "inProgress": "En curso",
+    "items": [
+      {
+        "code": "SC-900",
+        "name": "Microsoft Security, Compliance, and Identity Fundamentals",
+        "issuer": "Microsoft",
+        "year": null,
+        "inProgress": true
+      },
+      {
+        "code": "AZ-900",
+        "name": "Microsoft Azure Fundamentals",
+        "issuer": "Microsoft",
+        "year": "2026",
+        "inProgress": false
+      },
+      {
+        "code": "CCNA",
+        "name": "Switching, Routing, and Wireless Essentials",
+        "issuer": "Cisco",
+        "year": "2026",
+        "inProgress": false
+      },
+      {
+        "code": "CCNA",
+        "name": "Introduction to Networks",
+        "issuer": "Cisco",
+        "year": "2025",
+        "inProgress": false
+      },
+      {
+        "code": "KPMG",
+        "name": "Cyberboot",
+        "issuer": "KPMG",
+        "year": "2025",
+        "inProgress": false
+      },
+      {
+        "code": "Hack4U",
+        "name": "Linux Introduction & Linux Customization",
+        "issuer": "Hack4U",
+        "year": "2024",
+        "inProgress": false
+      }
+    ]
+  },
+  "education": {
+    "title": "Formación",
+    "degree": "Ingeniería en Informática",
+    "school": "UADE",
+    "dates": "Mar 2022 — Actualidad",
+    "completed": 37,
+    "total": 52,
+    "subjects": "materias aprobadas",
+    "expected": "Egreso estimado: dic 2027",
+    "progressAria": "37 de 52 materias aprobadas"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "source": "Código",
+    "items": [
+      {
+        "title": "MipTech",
+        "desc": "Aplicación web de gestión agropecuaria con control de acceso basado en roles, autenticación JWT, notificaciones en tiempo real (Socket.IO) y un chatbot con IA.",
+        "tags": [
+          "TypeScript",
+          "React",
+          "Chakra UI",
+          "Node.js",
+          "Express.js",
+          "MongoDB"
+        ],
+        "links": [
+          {
+            "labelKey": "backend",
+            "url": "https://github.com/Augusto-FG/MIPTech-backend"
+          },
+          {
+            "labelKey": "frontend",
+            "url": "https://github.com/rrrrho/miptech-frontend"
+          }
+        ]
+      },
+      {
+        "title": "Patitas Peludas",
+        "desc": "E-commerce full-stack con una API REST protegida con JWT y autorización por roles (administrador, comprador, vendedor) sobre productos y pedidos.",
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "React"
+        ],
+        "links": [
+          {
+            "labelKey": "backend",
+            "url": "https://github.com/fedeabeledo/backend-api-grupo-seis"
+          },
+          {
+            "labelKey": "frontend",
+            "url": "https://github.com/rrrrho/frontend-api-grupo-seis"
+          }
+        ]
+      },
+      {
+        "title": "Sistema de inscripción universitaria",
+        "desc": "Plataforma modular de inscripción, seguimiento y pagos, diseñada sobre SOLID/GRASP con lógica de negocio cubierta por tests unitarios.",
+        "tags": [
+          "Java",
+          "Spring Boot",
+          "JUnit"
+        ],
+        "links": [
+          {
+            "labelKey": "source",
+            "url": "https://github.com/valentincampestri/Registration-system-for-universities"
+          }
+        ]
+      },
+      {
+        "title": "Trilateración",
+        "desc": "Servicio en Spring Boot que calcula una ubicación a partir de tres puntos de referencia.",
+        "tags": [
+          "Java",
+          "Spring Boot"
+        ],
+        "links": [
+          {
+            "labelKey": "source",
+            "url": "https://github.com/rrrrho/tpo-poo"
+          }
+        ]
+      }
+    ],
+    "backend": "Backend",
+    "frontend": "Frontend"
+  },
+  "contact": {
+    "title": "Contacto",
+    "heading": "Hablemos.",
+    "langsLabel": "Idiomas",
+    "langsValue": "Español (nativo) · Inglés (competencia profesional completa)",
+    "copyright": "© 2026 Federico Abeledo",
+    "colophon": "Sitio estático · sin trackers · CSP estricta"
+  }
+}
