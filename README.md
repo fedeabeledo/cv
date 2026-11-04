@@ -44,19 +44,16 @@ Merging or pushing to `main` **publishes** the live site. Review on branch `v2` 
 
 Pages is already configured for **GitHub Actions** (not “deploy from a branch”).
 
-## Pending assets (replace placeholders)
+## Assets
 
-| Path | Replace with |
-|------|----------------|
-| `img/photo.svg` | Portrait photo (4:5), e.g. `img/photo.jpg` — update `index.html` `src` if you change the filename |
-| `img/cert-microsoft.svg` | Microsoft cert logo |
-| `img/cert-cisco.svg` | Cisco cert logo |
-| `img/cert-kpmg.svg` | KPMG cert logo |
-| `img/cert-hack4u.svg` | Hack4U cert logo |
-| `cv/Federico-Abeledo-CV-EN.pdf` | English CV PDF |
-| `cv/Federico-Abeledo-CV-ES.pdf` | Spanish CV PDF |
+| Path | Notes |
+|------|--------|
+| `img/photo.jpg` | Square portrait (1:1) |
+| `img/cert-*.svg` / `img/cert-hack4u.png` | Issuer logos on cert cards |
+| `cv/Federico-Abeledo-CV-EN.pdf` | English CV |
+| `cv/Federico-Abeledo-CV-ES.pdf` | Spanish CV |
 
-See also `img/PHOTO_PLACEHOLDER.txt` and `cv/CV_PLACEHOLDER.txt`.
+AZ-900 and both CCNA cards link out to Credly / Microsoft Learn verify URLs from `content/*.json` (`badgeUrl`).
 
 ## Security headers GitHub Pages cannot send
 

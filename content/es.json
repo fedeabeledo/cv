@@ -151,21 +151,24 @@
         "name": "Microsoft Azure Fundamentals",
         "issuer": "Microsoft",
         "year": "2026",
-        "inProgress": false
+        "inProgress": false,
+        "badgeUrl": "https://learn.microsoft.com/en-us/users/federicoabeledo-1350/credentials/a6a5d671b6636cdd"
       },
       {
         "code": "CCNA",
         "name": "Switching, Routing, and Wireless Essentials",
         "issuer": "Cisco",
         "year": "2026",
-        "inProgress": false
+        "inProgress": false,
+        "badgeUrl": "https://www.credly.com/badges/7c32fef1-8794-46ba-a336-48705ed9963a/public_url"
       },
       {
         "code": "CCNA",
         "name": "Introduction to Networks",
         "issuer": "Cisco",
         "year": "2025",
-        "inProgress": false
+        "inProgress": false,
+        "badgeUrl": "https://www.credly.com/badges/111a918f-7d32-4f69-b8db-12fa6d43217c/linked_in_profile"
       },
       {
         "code": "KPMG",
@@ -181,7 +184,8 @@
         "year": "2024",
         "inProgress": false
       }
-    ]
+    ],
+    "verify": "Ver insignia"
   },
   "education": {
     "title": "Formación",

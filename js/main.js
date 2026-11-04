@@ -9,7 +9,7 @@ const CERT_LOGOS = {
   Microsoft: "img/cert-microsoft.svg",
   Cisco: "img/cert-cisco.svg",
   KPMG: "img/cert-kpmg.svg",
-  Hack4U: "img/cert-hack4u.svg",
+  Hack4U: "img/cert-hack4u.png",
 };
 
 const CV_PATHS = {
@@ -176,13 +176,27 @@ function renderCertifications(data) {
     mid.appendChild(code);
     mid.appendChild(name);
 
+    const foot = document.createElement("div");
+    foot.className = "cert__foot";
+
     const issuer = document.createElement("span");
     issuer.className = "cert__issuer";
     issuer.textContent = cert.issuer;
+    foot.appendChild(issuer);
+
+    if (cert.badgeUrl) {
+      const verify = document.createElement("a");
+      verify.className = "cert__verify";
+      verify.href = cert.badgeUrl;
+      verify.target = "_blank";
+      verify.rel = "noopener noreferrer";
+      verify.textContent = `${data.certifications.verify} ↗`;
+      foot.appendChild(verify);
+    }
 
     li.appendChild(top);
     li.appendChild(mid);
-    li.appendChild(issuer);
+    li.appendChild(foot);
     grid.appendChild(li);
   });
 }
