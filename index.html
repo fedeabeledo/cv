@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Federico Abeledo — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Federico Abeledo — Cybersecurity Ssr. Consultant and Computer Science Engineering student."
+    />
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <span class="nav__prompt"
+          >fede@portfolio:~$
+          <span class="nav__prompt-cmd">cat index.md</span></span
+        >
+        <div class="nav__links">
+          <a href="#about"
+            ><span class="nav__num">01</span
+            ><span data-i18n="nav.about">About</span></a
+          >
+          <a href="#experience"
+            ><span class="nav__num">02</span
+            ><span data-i18n="nav.experience">Experience</span></a
+          >
+          <a href="#skills"
+            ><span class="nav__num">03</span
+            ><span data-i18n="nav.skills">Skills</span></a
+          >
+          <a href="#certifications"
+            ><span class="nav__num">04</span
+            ><span data-i18n="nav.certifications">Certifications</span></a
+          >
+          <a href="#education"
+            ><span class="nav__num">05</span
+            ><span data-i18n="nav.education">Education</span></a
+          >
+          <a href="#projects"
+            ><span class="nav__num">06</span
+            ><span data-i18n="nav.projects">Projects</span></a
+          >
+          <a href="#contact"
+            ><span class="nav__num">07</span
+            ><span data-i18n="nav.contact">Contact</span></a
+          >
+        </div>
+        <div class="nav__toggles">
+          <button
+            type="button"
+            class="nav__toggle"
+            id="lang-toggle"
+            data-i18n-aria="toggles.langAria"
+            aria-label="Cambiar idioma a español"
+          >
+            <span data-lang-mark="en" class="nav__lang-active">EN</span> /
+            <span data-lang-mark="es">ES</span>
+          </button>
+          <button
+            type="button"
+            class="nav__toggle"
+            id="theme-toggle"
+            aria-pressed="false"
+            aria-label="Switch to dark theme"
+          >
+            Dark
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="hero reveal" aria-label="Introduction">
+        <div class="hero__text">
+          <h1 class="hero__name">Federico<br />Abeledo</h1>
+          <p class="hero__role">
+            <span data-i18n="hero.role">Cybersecurity Ssr. Consultant</span>
+            <span class="hero__dot" aria-hidden="true"> · </span>
+            <span data-i18n="hero.student"
+              >Computer Science Engineering student</span
+            >
+          </p>
+          <div class="hero__actions">
+            <a
+              class="btn"
+              data-cv-link
+              href="cv/Federico-Abeledo-CV-EN.pdf"
+              download
+              ><span data-i18n="hero.cv">Download CV</span>
+              <span aria-hidden="true">↓</span></a
+            >
+            <div class="hero__social">
+              <a
+                href="https://github.com/fedeabeledo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub ↗</a
+              >
+              <a
+                href="https://linkedin.com/in/federico-abeledo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn ↗</a
+              >
+              <a href="mailto:fedeabeledo01@gmail.com">Email ↗</a>
+              <a
+                href="https://wa.me/5491153230016"
+                target="_blank"
+                rel="noopener noreferrer"
+                >WhatsApp ↗</a
+              >
+            </div>
+          </div>
+          <dl class="hero__meta">
+            <div>
+              <dt data-i18n="hero.basedLabel">Based in</dt>
+              <dd data-i18n="hero.basedValue">Buenos Aires, Argentina</dd>
+            </div>
+            <div>
+              <dt data-i18n="hero.nowLabel">Currently</dt>
+              <dd data-i18n="hero.nowValue">KPMG Argentina</dd>
+            </div>
+            <div>
+              <dt data-i18n="hero.langsLabel">Languages</dt>
+              <dd data-i18n="hero.langsValue">
+                Spanish (native) · English (full professional)
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="hero__figure">
+          <div class="hero__photo">
+            <img
+              src="img/photo.svg"
+              width="720"
+              height="900"
+              data-i18n-alt="hero.photoAlt"
+              alt="Portrait of Federico Abeledo"
+            />
+          </div>
+          <figcaption class="hero__caption" data-i18n="hero.figCaption">
+            Fig. 1 — Federico Abeledo, 2026.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="about" class="section reveal">
+        <h2 class="section__label">
+          § 01 — <span data-i18n="about.title">About</span>
+        </h2>
+        <div class="section__content">
+          <p class="about__lead" data-i18n="about.lead">
+            I work in cybersecurity on the governance side: access controls,
+            audits, service accounts and the evidence that proves things are
+            actually under control.
+          </p>
+          <p class="about__body" data-i18n="about.body">
+            I automate whatever I end up doing twice, mostly with Python and
+            PowerShell. I pick up new tools and domains quickly and enjoy being
+            thrown into unfamiliar territory. My path so far has taken me from
+            software development to networking to GRC, and I’m always looking
+            for the next thing to learn. I’m finishing my Computer Science
+            Engineering degree at UADE and aiming to keep growing in security,
+            broadly and deeply.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <h2 class="section__label">
+          § 02 — <span data-i18n="experience.title">Experience</span>
+        </h2>
+        <div class="section__content experience">
+          <article class="job">
+            <div class="job__head">
+              <h3 class="job__title">
+                <span data-i18n="experience.kpmg.role"
+                  >Cybersecurity Ssr. Consultant</span
+                >,
+                <span class="job__title-em" data-i18n="experience.kpmg.org"
+                  >KPMG</span
+                >
+              </h3>
+              <span class="job__dates" data-i18n="experience.kpmg.dates"
+                >Jan 2026 — Present</span
+              >
+            </div>
+            <p class="promo">
+              <span aria-hidden="true">↑</span>
+              <span data-i18n="experience.kpmg.promo"
+                >Promoted from Jr. to Ssr. · Sep 2026</span
+              >
+            </p>
+            <ul class="job__bullets" id="kpmg-bullets">
+              <li>
+                Operate user access governance controls under SOX and CIS
+                frameworks: periodic access reviews, joiner/mover/leaver
+                validation and evidence consolidation.
+              </li>
+              <li>
+                Drive service account governance: cross-reference multiple data
+                sources to identify owners of inactive service accounts and
+                coordinate their deactivation.
+              </li>
+              <li>
+                Lead Active Directory cleanup initiatives, identifying stale and
+                orphaned accounts.
+              </li>
+              <li>
+                Extract and prepare audit evidence from multiple systems,
+                including SAP, and respond to internal and external audit
+                requests.
+              </li>
+              <li>
+                Automate recurring reporting and validation tasks with Python
+                and PowerShell.
+              </li>
+              <li>
+                Support vulnerability management activities using Tenable,
+                prioritizing findings with CVSS and CISA KEV.
+              </li>
+              <li>
+                Coordinate with employees and internal teams on access requests
+                and follow-ups.
+              </li>
+              <li>
+                Founded and run an internal AZ-900 study group for colleagues,
+                with weekly module-by-module sessions.
+              </li>
+            </ul>
+          </article>
+          <article class="job job--secondary">
+            <div class="job__head">
+              <h3 class="job__title">
+                <span data-i18n="experience.buerentals.role"
+                  >Collections Management</span
+                >,
+                <span class="job__title-em" data-i18n="experience.buerentals.org"
+                  >Buerentals</span
+                >
+              </h3>
+              <span class="job__dates" data-i18n="experience.buerentals.dates"
+                >Jul 2022 — Jun 2023 · Part-time</span
+              >
+            </div>
+            <p class="job__summary" id="buerentals-summary">
+              Managed customer communication and reservation data for short-term
+              rentals.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <h2 class="section__label">
+          § 03 — <span data-i18n="skills.title">Skills</span>
+        </h2>
+        <div class="section__content skills">
+          <div class="skills__primary">
+            <h3
+              class="skills__primary-title"
+              data-i18n="skills.primary.name"
+            >
+              Security &amp; GRC
+            </h3>
+            <ul class="chip-list" id="skills-primary-items">
+              <li class="chip--solid">Access governance</li>
+              <li class="chip--solid">Service account management</li>
+              <li class="chip--solid">SOX controls</li>
+              <li class="chip--solid">Audit evidence</li>
+              <li class="chip--solid">Active Directory</li>
+              <li class="chip--solid">
+                Vulnerability management — Tenable, CVSS, CISA KEV
+              </li>
+              <li class="chip--solid">API security basics</li>
+            </ul>
+          </div>
+          <div class="skills__languages">
+            <h3
+              class="skills__languages-title"
+              data-i18n="skills.languages.name"
+            >
+              Languages
+            </h3>
+            <ul class="lang-rows" id="skills-languages">
+              <li>
+                <span class="lang-rows__name">Spanish</span>
+                <span class="lang-rows__level">Native</span>
+              </li>
+              <li>
+                <span class="lang-rows__name">English</span>
+                <span class="lang-rows__level"
+                  >Full professional proficiency</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="skills__groups" id="skills-groups">
+            <div class="skills__group">
+              <h4 class="skills__group-title">Automation</h4>
+              <ul class="chip-list">
+                <li class="chip--outline">Python</li>
+                <li class="chip--outline">PowerShell</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__group-title">Infra</h4>
+              <ul class="chip-list">
+                <li class="chip--outline">Linux</li>
+                <li class="chip--outline">Networking (CCNA)</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__group-title">Development</h4>
+              <ul class="chip-list">
+                <li class="chip--outline">Java / Spring Boot</li>
+                <li class="chip--outline">Flask</li>
+                <li class="chip--outline">TypeScript</li>
+                <li class="chip--outline">React</li>
+                <li class="chip--outline">Next.js</li>
+                <li class="chip--outline">Node.js / Express</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__group-title">Databases</h4>
+              <ul class="chip-list">
+                <li class="chip--outline">MySQL</li>
+                <li class="chip--outline">PostgreSQL</li>
+                <li class="chip--outline">SQL Server</li>
+                <li class="chip--outline">MongoDB</li>
+                <li class="chip--outline">Redis</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h4 class="skills__group-title">Practices</h4>
+              <ul class="chip-list">
+                <li class="chip--outline">Git</li>
+                <li class="chip--outline">REST APIs</li>
+                <li class="chip--outline">Agile</li>
+                <li class="chip--outline">Unit testing</li>
+                <li class="chip--outline">SOLID / GRASP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section reveal">
+        <h2 class="section__label">
+          § 04 — <span data-i18n="certifications.title">Certifications</span>
+        </h2>
+        <ul class="section__content cert-grid" id="cert-grid">
+          <li class="cert cert--progress">
+            <div class="cert__top">
+              <img
+                class="cert__logo"
+                src="img/cert-microsoft.svg"
+                width="48"
+                height="48"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="cert__badge" data-i18n="certifications.inProgress"
+                >In progress</span
+              >
+            </div>
+            <div>
+              <span class="cert__code">SC-900</span>
+              <h3 class="cert__name">
+                Microsoft Security, Compliance, and Identity Fundamentals
+              </h3>
+            </div>
+            <span class="cert__issuer">Microsoft</span>
+          </li>
+          <li class="cert">
+            <div class="cert__top">
+              <img
+                class="cert__logo"
+                src="img/cert-microsoft.svg"
+                width="48"
+                height="48"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="cert__year">2026</span>
+            </div>
+            <div>
+              <span class="cert__code">AZ-900</span>
+              <h3 class="cert__name">Microsoft Azure Fundamentals</h3>
+            </div>
+            <span class="cert__issuer">Microsoft</span>
+          </li>
+          <li class="cert">
+            <div class="cert__top">
+              <img
+                class="cert__logo"
+                src="img/cert-cisco.svg"
+                width="48"
+                height="48"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="cert__year">2026</span>
+            </div>
+            <div>
+              <span class="cert__code">CCNA</span>
+              <h3 class="cert__name">
+                Switching, Routing, and Wireless Essentials
+              </h3>
+            </div>
+            <span class="cert__issuer">Cisco</span>
+          </li>
+          <li class="cert">
+            <div class="cert__top">
+              <img
+                class="cert__logo"
+                src="img/cert-cisco.svg"
+                width="48"
+                height="48"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="cert__year">2025</span>
+            </div>
+            <div>
+              <span class="cert__code">CCNA</span>
+              <h3 class="cert__name">Introduction to Networks</h3>
+            </div>
+            <span class="cert__issuer">Cisco</span>
+          </li>
+          <li class="cert">
+            <div class="cert__top">
+              <img
+                class="cert__logo"
+                src="img/cert-kpmg.svg"
+                width="48"
+                height="48"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="cert__year">2025</span>
+            </div>
+            <div>
+              <span class="cert__code">KPMG</span>
+              <h3 class="cert__name">Cyberboot</h3>
+            </div>
+            <span class="cert__issuer">KPMG</span>
+          </li>
+          <li class="cert">
+            <div class="cert__top">
+              <img
+                class="cert__logo"
+                src="img/cert-hack4u.svg"
+                width="48"
+                height="48"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="cert__year">2024</span>
+            </div>
+            <div>
+              <span class="cert__code">Hack4U</span>
+              <h3 class="cert__name">
+                Linux Introduction &amp; Linux Customization
+              </h3>
+            </div>
+            <span class="cert__issuer">Hack4U</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="education" class="section reveal">
+        <h2 class="section__label">
+          § 05 — <span data-i18n="education.title">Education</span>
+        </h2>
+        <div class="section__content edu">
+          <div class="edu__head">
+            <h3 class="edu__title">
+              <span data-i18n="education.degree"
+                >Engineering Degree in Computer Science</span
+              >,
+              <span class="edu__em" data-i18n="education.school">UADE</span>
+            </h3>
+            <span class="edu__dates" data-i18n="education.dates"
+              >Mar 2022 — Present</span
+            >
+          </div>
+          <div
+            class="edu__segments"
+            id="edu-segments"
+            role="img"
+            aria-label="37 of 52 subjects completed"
+          >
+            <span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg is-on"></span
+            ><span class="edu__seg is-on"></span><span class="edu__seg"></span
+            ><span class="edu__seg"></span><span class="edu__seg"></span
+            ><span class="edu__seg"></span><span class="edu__seg"></span
+            ><span class="edu__seg"></span><span class="edu__seg"></span
+            ><span class="edu__seg"></span><span class="edu__seg"></span
+            ><span class="edu__seg"></span><span class="edu__seg"></span
+            ><span class="edu__seg"></span><span class="edu__seg"></span
+            ><span class="edu__seg"></span><span class="edu__seg"></span>
+          </div>
+          <p class="edu__meta">
+            <span
+              ><b class="edu__count" id="edu-count">37 / 52</b>
+              <span data-i18n="education.subjects">subjects completed</span></span
+            >
+            <span
+              class="edu__expected"
+              data-i18n="education.expected"
+              >Expected graduation: Dec 2027</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section section--projects reveal">
+        <h2 class="section__label">
+          § 06 — <span data-i18n="projects.title">Projects</span>
+        </h2>
+        <ol class="section__content project-list" id="project-list">
+          <li class="project">
+            <div class="project__body">
+              <h3 class="project__title">MipTech</h3>
+              <p class="project__desc">
+                Agricultural management web app with role-based access control,
+                JWT authentication, real-time notifications (Socket.IO) and an
+                AI chatbot.
+              </p>
+              <p class="project__tags">
+                TypeScript · React · Chakra UI · Node.js · Express.js · MongoDB
+              </p>
+            </div>
+            <div class="project__links">
+              <a
+                href="https://github.com/Augusto-FG/MIPTech-backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Backend ↗</a
+              >
+              <a
+                href="https://github.com/rrrrho/miptech-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Frontend ↗</a
+              >
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__body">
+              <h3 class="project__title">Patitas Peludas</h3>
+              <p class="project__desc">
+                Full-stack e-commerce with a JWT-secured REST API and
+                role-based authorization (admin, buyer, seller) across products
+                and orders.
+              </p>
+              <p class="project__tags">Java · Spring Boot · MySQL · React</p>
+            </div>
+            <div class="project__links">
+              <a
+                href="https://github.com/fedeabeledo/backend-api-grupo-seis"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Backend ↗</a
+              >
+              <a
+                href="https://github.com/rrrrho/frontend-api-grupo-seis"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Frontend ↗</a
+              >
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__body">
+              <h3 class="project__title">
+                Registration System for Universities
+              </h3>
+              <p class="project__desc">
+                Modular platform for enrollment, tracking and payments,
+                designed around SOLID/GRASP with unit-tested business logic.
+              </p>
+              <p class="project__tags">Java · Spring Boot · JUnit</p>
+            </div>
+            <div class="project__links">
+              <a
+                href="https://github.com/valentincampestri/Registration-system-for-universities"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source ↗</a
+              >
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__body">
+              <h3 class="project__title">Trilateration</h3>
+              <p class="project__desc">
+                Spring Boot service that computes a location from three
+                reference points.
+              </p>
+              <p class="project__tags">Java · Spring Boot</p>
+            </div>
+            <div class="project__links">
+              <a
+                href="https://github.com/rrrrho/tpo-poo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source ↗</a
+              >
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer reveal">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__intro">
+            <span class="footer__label"
+              >§ 07 — <span data-i18n="contact.title">Contact</span></span
+            >
+            <p class="footer__heading" data-i18n="contact.heading">
+              Let’s talk.
+            </p>
+          </div>
+          <a
+            class="btn btn--footer"
+            data-cv-link
+            href="cv/Federico-Abeledo-CV-EN.pdf"
+            download
+            ><span data-i18n="hero.cv">Download CV</span>
+            <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="footer__grid">
+          <div class="footer__item">
+            <span class="footer__item-label">Email</span>
+            <a href="mailto:fedeabeledo01@gmail.com"
+              >fedeabeledo01@gmail.com</a
+            >
+          </div>
+          <div class="footer__item">
+            <span class="footer__item-label">LinkedIn</span>
+            <a
+              href="https://linkedin.com/in/federico-abeledo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >linkedin.com/in/federico-abeledo</a
+            >
+          </div>
+          <div class="footer__item">
+            <span class="footer__item-label">GitHub</span>
+            <a
+              href="https://github.com/fedeabeledo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >github.com/fedeabeledo</a
+            >
+          </div>
+          <div class="footer__item">
+            <span class="footer__item-label">WhatsApp</span>
+            <a
+              href="https://wa.me/5491153230016"
+              target="_blank"
+              rel="noopener noreferrer"
+              >+54 9 11 5323-0016</a
+            >
+          </div>
+          <div class="footer__item">
+            <span class="footer__item-label" data-i18n="contact.langsLabel"
+              >Languages</span
+            >
+            <span data-i18n="contact.langsValue"
+              >Spanish (native) · English (full professional proficiency)</span
+            >
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span data-i18n="contact.copyright">© 2026 Federico Abeledo</span>
+          <span data-i18n="contact.colophon"
+            >Static site · no trackers · strict CSP</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
