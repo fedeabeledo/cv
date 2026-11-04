@@ -265,13 +265,15 @@ function updateCvLinks(lang) {
   });
 }
 
-function updateLangToggle(lang) {
+function updateLangToggle(lang, data) {
   const btn = document.getElementById("lang-toggle");
   if (!btn) return;
   const en = btn.querySelector('[data-lang-mark="en"]');
   const es = btn.querySelector('[data-lang-mark="es"]');
   if (en) en.classList.toggle("nav__lang-active", lang === "en");
   if (es) es.classList.toggle("nav__lang-active", lang === "es");
+  // Visible text is "EN / ES"; keep it inside the accessible name (WCAG 2.5.3).
+  btn.setAttribute("aria-label", `EN / ES — ${data.toggles.langAria}`);
 }
 
 function updateThemeToggle(theme, data) {
@@ -285,7 +287,7 @@ function updateThemeToggle(theme, data) {
       ? data.toggles.themeToDarkAria
       : data.toggles.themeToLightAria;
   btn.textContent = label;
-  btn.setAttribute("aria-label", aria);
+  btn.setAttribute("aria-label", `${label} — ${aria}`);
   btn.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
 }
 
@@ -299,7 +301,7 @@ async function applyLanguage(lang) {
   renderEducation(data);
   renderProjects(data);
   updateCvLinks(lang);
-  updateLangToggle(lang);
+  updateLangToggle(lang, data);
   const theme =
     document.documentElement.getAttribute("data-theme") === "dark"
       ? "dark"
